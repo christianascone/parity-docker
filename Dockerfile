@@ -7,3 +7,7 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER docker
 CMD /bin/bash
 RUN /bin/bash -c "bash <(curl https://get.parity.io -kL)"
+
+EXPOSE 8180
+EXPOSE 8545
+EXPOSE 8546

@@ -16,7 +16,7 @@ A docker image, using ubuntu:16.04 as base, will be built.
 
 Then run a container with
 ```bash
-docker run -ti parity/ubuntu
+docker run -ti -p 8180:8180 -p 8545:8545 -p 8546:8546 parity/ubuntu
 ```
 
 ### Parity run
@@ -30,6 +30,17 @@ parity
 In case you want to deploy a private development chain, run
 ```bash
 parity --chain dev
+```
+
+## Parity ui
+
+Parity can also expose its ui running it this way:
+```bash
+parity ui --dapps-interface 0.0.0.0 --ws-interface 0.0.0.0 --ui-interface 0.0.0.0
+```
+or, for development chain
+```bash
+parity ui --chain dev --dapps-interface 0.0.0.0 --ws-interface 0.0.0.0 --ui-interface 0.0.0.0
 ```
 
 ## References
