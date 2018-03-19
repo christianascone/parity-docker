@@ -1,5 +1,7 @@
 # parity-docker
 
+[![GitHub license](https://img.shields.io/github/license/christianascone/parity-docker.svg)](https://github.com/christianascone/parity-docker/blob/master/LICENSE)
+
 ## Requirements
 - [Docker](https://www.docker.com/get-docker)
 
